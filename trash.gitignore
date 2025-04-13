@@ -1,0 +1,16 @@
+# Node modules (don't push this heavy folder)
+node_modules/
+
+# VS Code folder (personal settings)
+.vscode/
+
+# Environment files (if any)
+.env
+
+# Optional build folders
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
