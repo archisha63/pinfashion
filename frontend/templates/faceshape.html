@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Face Shape Analyzer</title>
+  <link rel="stylesheet" href="/frontend/js/css/faceshape.css">
+</head>
+<body>
+
+  <h1 class="heading">✨ Know Your Face Shape ✨</h1>
+
+  <div class="circles-container">
+    <div class="circle" onclick="showCard('oval')">
+      <img src="/frontend/js/assets/images/oval.jpg" alt="Oval Face">
+      <span>Oval</span>
+    </div>
+    <div class="circle" onclick="showCard('round')">
+      <img src="/frontend/js/assets/images/round.jpg" alt="Round Face">
+      <span>Round</span>
+    </div>
+    <div class="circle" onclick="showCard('square')">
+      <img src="/frontend/js/assets/images/square.jpg" alt="Square Face">
+      <span>Square</span>
+    </div>
+    <div class="circle" onclick="showCard('heart')">
+      <img src="/frontend/js/assets/images/heart.jpg" alt="Heart Face">
+      <span>Heart</span>
+    </div>
+    <div class="circle" onclick="showCard('diamond')">
+      <img src="/frontend/js/assets/images/diamond.jpg" alt="Diamond Face">
+      <span>Diamond</span>
+    </div>
+    <div class="circle" onclick="showCard('oblong')">
+      <img src="/frontend/js/assets/images/oblong.jpg" alt="Oblong Face">
+      <span>Oblong</span>
+    </div>
+    <div class="circle" onclick="showCard('triangle')">
+      <img src="/frontend/js/assets/images/triangle.jpg" alt="Triangle Face">
+      <span>Triangle</span>
+    </div>
+  </div>
+  
+  <a href="/frontend/templates/page2.html" class="back-home">⬅️ Back to Home</a>
+  <div id="infoCard" class="card"></div>
+
+  <script src="/frontend/js/faceshape.js"></script>
+</body>
+</html>

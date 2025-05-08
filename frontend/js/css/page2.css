@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5cfcf;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    animation: pageFadeIn 1s ease-in-out;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #d08c8c, rgb(221, 187, 187));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    animation: slideFromTop 0.8s ease-out;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 0 #e0e0e0;
+  }
+  
+  .login-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-circle {
+    width: 42px;
+    height: 42px;
+    background: #4a90e2;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+  }
+  
+  .login-circle:hover {
+    background-color: #357abd;
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .main-content {
+    padding-top: 100px;
+    text-align: center;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  .main-content h1 {
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .main-content p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  @keyframes slideFromTop {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pageFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .chat-search-section {
+    text-align: center;
+    margin: 80px auto;
+    animation: fadeSlide 1s ease-in-out;
+  }
+  
+  .chat-search-section h2 {
+    color: #d63384;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  
+  .pfieee-name {
+    background: linear-gradient(90deg, #ff77aa, #ffccf9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .chat-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .chat-search input {
+    padding: 14px;
+    border-radius: 30px;
+    border: 2px solid #ffc0cb;
+    width: 60%;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .chat-search input:focus {
+    outline: none;
+    border-color: #d63384;
+    box-shadow: 0 0 8px #f8a1d1;
+  }
+  
+  .chat-search button {
+    padding: 14px 24px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .chat-search button:hover {
+    background-color: #b2256e;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .occasion-section,
+  .style-section,
+  .makeup-section,
+  .accessories-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .occasion-section {
+    background: linear-gradient(135deg, #ffe0ec, #f6d3e1);
+  }
+  
+  .style-section {
+    background: linear-gradient(135deg, #fce5ec, #f6d3e1);
+  }
+  
+  .makeup-section {
+    background: linear-gradient(135deg, #ffe4ec, #f8d6e0);
+  }
+  
+  .accessories-section {
+    background: linear-gradient(135deg, #ffe7f2, #f9d9ea);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #d63384;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .looks-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  .look-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .look-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(214, 51, 132, 0.2);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #d63384;
+    transition: border 0.3s ease;
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .look-item:hover .circle img {
+    transform: scale(1.1);
+  }
+  
+  .look-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .look-item:hover p {
+    color: #d63384;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full vertical height */
+  }
+  
+  .back-home {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #ffb6c1, #ff69b4);
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .back-home:hover {
+    background: #fff;
+    color: #ff69b4;
+    border: 2px solid #ff69b4;
+    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.5);
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Body Shape Analyzer - PinFashion</title>
+  <link rel="stylesheet" href="/frontend/js/css/bodyshape.css" />
+</head>
+<body>
+  <div class="circle-container">
+    <h1>✨ Know Your Body Shape ✨</h1>
+    <p>Select your body shape to see what suits you best!</p>
+
+    <div class="body-shape-options">
+      <!-- Body Shape Circles -->
+      <div class="body-shape" data-shape="hourglass">
+        <img src="/frontend/js/assets/images/hourglass.jpg" alt="Hourglass" />
+        <span>Hourglass</span>
+      </div>
+      <div class="body-shape" data-shape="pear">
+        <img src="/frontend/js/assets/images/pearshape.jpg" alt="Pear" />
+        <span>Pear</span>
+      </div>
+      <div class="body-shape" data-shape="apple">
+        <img src="/frontend/js/assets/images/appleshape.jpg" alt="Apple" />
+        <span>Apple</span>
+      </div>
+      <div class="body-shape" data-shape="rectangle">
+        <img src="/frontend/js/assets/images/reactangleshape.jpg" alt="Rectangle" />
+        <span>Rectangle</span>
+      </div>
+      <div class="body-shape" data-shape="inverted">
+        <img src="/frontend/js/assets/images/invertedtriangle.jpg" alt="Inverted Triangle" />
+        <span>Inverted</span>
+      </div>
+      
+    </div>
+
+    <!-- Recommendation Card -->
+    <div class="recommendation-card" id="recommendation-card">
+      <h2 id="shape-title"></h2>
+      <p id="shape-description"></p>
+      <ul id="recommendations"></ul>
+    </div>
+  </div>
+
+  <div class="action-buttons">
+    <button id="retake-btn">🔁 Retake Analysis</button>
+    <button id="quiz-btn">📝 Take Quiz Instead</button>
+  </div>
+  
+  <div id="quiz-section" style="display: none;">
+    <h2 style="color:#d63384;">✨ Body Shape Quiz ✨</h2>
+  
+    <div class="quiz-question">
+      <p>1. Where do you gain weight first?</p>
+      <button onclick="showAdvice(0)">Hips/Thighs</button>
+      <button onclick="showAdvice(1)">Tummy</button>
+      <button onclick="showAdvice(2)">Evenly All Over</button>
+      <div class="quiz-advice" id="advice0"></div>
+    </div>
+  
+    <div class="quiz-question">
+      <p>2. Are your shoulders wider than your hips?</p>
+      <button onclick="showAdvice(3)">Yes</button>
+      <button onclick="showAdvice(4)">No</button>
+      <div class="quiz-advice" id="advice1"></div>
+    </div>
+  
+    <div class="quiz-question">
+      <p>3. How defined is your waist?</p>
+      <button onclick="showAdvice(5)">Very Defined</button>
+      <button onclick="showAdvice(6)">Slightly Defined</button>
+      <button onclick="showAdvice(7)">Not Defined</button>
+      <div class="quiz-advice" id="advice2"></div>
+    </div>
+  
+    <div class="quiz-question">
+      <p>4. How would you describe your lower body?</p>
+      <button onclick="showAdvice(8)">Curvier</button>
+      <button onclick="showAdvice(9)">Lean & Straight</button>
+      <div class="quiz-advice" id="advice3"></div>
+    </div>
+  
+    <div class="quiz-question">
+      <p>5. Which celebrity's body do you relate to most?</p>
+      <button onclick="showAdvice(10)">Kim Kardashian</button>
+      <button onclick="showAdvice(11)">Deepika Padukone</button>
+      <button onclick="showAdvice(12)">Kriti Sanon</button>
+      <div class="quiz-advice" id="advice4"></div>
+    </div>
+
+    <div class="back-home-container">
+        <a href="/frontend/pages/page2.html" class="back-home-btn">🏠 Back to Home</a>
+      </div>
+      
+  </div>
+  
+  
+
+  <script src="/frontend/js/bodyshape.js"></script>
+</body>
+</html>
